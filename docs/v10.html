@@ -1,7 +1,7 @@
 <html>
     <head>
         <style>
-        .standardTable{border: soild;
+        .standardTable{border: solid;
                        border-collapse:collapse;}
         .blackbox{border: solid;
                   height: 100px;
@@ -9,15 +9,18 @@
                   text-align: center;
                   background-color:black;
                   border-color: white;
-                  color:yellow;}
+                  color:yellow;
+                  vertical-align: top}
         .sevenSegmentTable {color: white;
                            border-color: white;
                            border: solid;
-                           border-collapse: collapse;}
+                           border-collapse: collapse;
+                           text-align: center;}
         .notsevenSegmentTable {border: none;}
         .horizontal {width: 40px; height: 10px;}
         .vertical {width: 10px; height: 40px;}
         .red {background-color: red;}
+        .black {background-color: black;}
         .corner {width: 10px; height: 10px}
         .middle {width: 40px; height: 40px}
         </style>
@@ -170,46 +173,46 @@
                 </td>
                 
                 <td class="blackbox"><h3>Illuminate Segments</h3>                    
-                    <p id = "segments"></p>
+                    <p id = "segments" style="display:none"></p>
                     <table>
                         <tr>
-                            <td class = "notsevenSegmentTable corner">1</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                             <td id = "segmentA"
                                 class = "sevenSegmentTable
                                          horizontal">A</td>
-                            <td class = "notsevenSegmentTable corner">3</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                         </tr>
                         <tr>
                             <td id = "segmentF"
                                 class = "sevenSegmentTable
                                          vertical">F</td>
-                            <td class = "notsevenSegmentTable middle">2</td>
+                            <td class = "notsevenSegmentTable middle"></td>
                             <td id = "segmentB"
                                 class = "sevenSegmentTable
                                          vertical">B</td>
                         </tr>
                         <tr>
-                            <td class = "notsevenSegmentTable corner">1</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                             <td id = "segmentG"
                                 class = "sevenSegmentTable
                                          horizontal">G</td>
-                            <td class = "notsevenSegmentTable corner">3</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                         </tr>
                         <tr>
                             <td id = "segmentE"
                                 class = "sevenSegmentTable
                                          vertical">E</td>
-                            <td class = "notsevenSegmentTable middle">2</td>
+                            <td class = "notsevenSegmentTable middle"></td>
                             <td id = "segmentC"
                                 class = "sevenSegmentTable
                                          vertical">C</td>
                         </tr>
                          <tr>
-                            <td class = "notsevenSegmentTable corner">1</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                             <td id = "segmentD"
                                 class = "sevenSegmentTable
                                          horizontal">D</td>
-                            <td class = "notsevenSegmentTable corner">3</td>
+                            <td class = "notsevenSegmentTable corner"></td>
                         </tr>
                     </table>
                 </td>
