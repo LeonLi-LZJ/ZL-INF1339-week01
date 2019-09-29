@@ -16,6 +16,7 @@
                            border-collapse: collapse;}
         .notsevenSegmentTable{border: none;}
         </style>
+        
         <script>
             function display(number){
                 //this will show both decimal number we input and binary number we hope output
@@ -29,9 +30,9 @@
                 document.getElementById("binary2ssd_output").innerHTML=ssd
                 
                 //send ssd signals to function illuminate_segments()
-                document.getElementById("illuminate_input").innerHTML=ssd
+                //document.getElementById("illuminate_input").innerHTML=ssd
                 var bcd = illuminate(ssd)
-                document.getElementById("illuminate_output").innerHTML='done'
+                //document.getElementById("illuminate_output").innerHTML='DONE'
             }
             
             function bin2ssd(binary){
@@ -69,9 +70,29 @@
                 
             }
             
-            function illuminate(){
-                
-                
+            function illuminate(signals){
+                document.getElementById("illuminate_output").innerHTML = signals
+                if(signals[0] == '1'){
+                    document.getElementById("segmentA").innerHTML = 'ON'}
+                else {document.getElementById("segmentA").innerHTML = ''}
+                if(signals[1] == '1'){
+                    document.getElementById("segmentB").innerHTML = 'ON'}
+                else {document.getElementById("segmentB").innerHTML = ''}
+                if(signals[2] == '1'){
+                    document.getElementById("segmentC").innerHTML = 'ON'}
+                else {document.getElementById("segmentC").innerHTML = ''}
+                if(signals[3] == '1'){
+                    document.getElementById("segmentD").innerHTML = 'ON'}
+                else {document.getElementById("segmentD").innerHTML = ''}
+                if(signals[4] == '1'){
+                    document.getElementById("segmentE").innerHTML = 'ON'}
+                else {document.getElementById("segmentE").innerHTML = ''}
+                if(signals[5] == '1'){
+                    document.getElementById("segmentF").innerHTML = 'ON'}
+                else {document.getElementById("segmentF").innerHTML = ''}
+                if(signals[6] == '1'){
+                    document.getElementById("segmentG").innerHTML = 'ON'}
+                else {document.getElementById("segmentG").innerHTML = ''}       
             }
             
             // first method
